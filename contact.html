@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        header {
+            background-color: #007BFF;
+            padding: 10px 0;
+            color: white;
+        }
+
+        header .logo {
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(77, 143, 225);
+            border-radius: 5px;
+        }
+
+        
+        .contact-section {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .contact-item i {
+            margin-right: 10px;
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button.btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="logo.png" alt="Dream Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Whether you have a question about our products, need assistance, or just want to share your thoughts, feel free to reach out.</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                <p>Call Us: +91 12345 67890</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <p>Email: <a href="mailto:dream@agaur.com">support@dream.com</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <p>Visit Us: 123 Fashion Street, New Delhi, India</p>
+            </div>
+        </div>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" aria-label="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dream - Taste the Legacy. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Facebook">
+                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector(".contact-form");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                if (name === "" || email === "" || message === "") {
+                    alert("Please fill in all fields.");
+                    return;
+                }
+
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return;
+                }
+
+                alert("Thank you for your message! We will get back to you shortly.");
+                form.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>

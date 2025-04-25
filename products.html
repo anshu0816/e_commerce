@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - AGaur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Dream Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <img src="search.png" class="search-icon" alt="Search Icon" id="search-icon">
+        </div>
+        <div class="user-actions">
+            <div class="user-action">
+                <img src="user-login-icon.svg" class="action-icon" alt="Login Icon" id="login-icon">
+                <span>User</span>
+            </div>
+            <div class="user-action">
+                <img src="wishlist.svg" class="action-icon" alt="Wishlist Icon">
+                <span>Wishlist</span>
+                <div class="badge">5</div>
+            </div>
+            <div class="user-action">
+                <img src="cart.svg" class="action-icon" alt="Cart Icon">
+                <span>Cart</span>
+                <div class="badge">3</div>
+            </div>
+        </div>
+        
+        <!-- Cart Sidebar -->
+        <aside id="cart-sidebar">
+            <span class="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart">
+                <ul id="cart-items"></ul>
+                <p id="cart-total">Total: ₹0</p>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </aside>
+    </header>
+    
+    <section class="featured-products">
+        <h2 style="margin-top: 3rem;"></h2>
+        <div class="product-grid">
+            
+            <div class="product-item">
+                <img src="img_1.jpg" alt="Dress 1">
+                <h3>Elegant Evening Gown</h3>
+                <p>₹2,499.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="1" data-product-name="Elegant Evening Gown" data-product-price="2499.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_2.jpg" alt="Dress 2">
+                <h3>Classic Summer Dress</h3>
+                <p>₹1,799.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="2" data-product-name="Classic Summer Dress" data-product-price="1799.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_3.jpg" alt="Dress 3">
+                <h3>Floral Spring Dress</h3>
+                <p>₹1,999.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="3" data-product-name="Floral Spring Dress" data-product-price="1999.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_4.jpg" alt="Dress 4">
+                <h3>Chic Party Dress</h3>
+                <p>₹2,299.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="4" data-product-name="Chic Party Dress" data-product-price="2299.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_5.jpg" alt="Dress 5">
+                <h3>Casual Day Dress</h3>
+                <p>₹1,499.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="5" data-product-name="Casual Day Dress" data-product-price="1499.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_6.jpg" alt="Dress 6">
+                <h3>Luxury Gown</h3>
+                <p>₹3,999.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="6" data-product-name="Luxury Gown" data-product-price="3999.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_7.jpg" alt="Dress 7">
+                <h3>Classic Black Dress</h3>
+                <p>₹2,199.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="7" data-product-name="Classic Black Dress" data-product-price="2199.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_8.webp" alt="Dress 8">
+                <h3>Boho Maxi Dress</h3>
+                <p>₹2,599.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="8" data-product-name="Boho Maxi Dress" data-product-price="2599.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_9.jpg" alt="Dress 9">
+                <h3>Elegant Cocktail Dress</h3>
+                <p>₹2,799.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="9" data-product-name="Elegant Cocktail Dress" data-product-price="2799.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_10.jpg" alt="Dress 10">
+                <h3>Vintage Lace Dress</h3>
+                <p>₹3,499.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="10" data-product-name="Vintage Lace Dress" data-product-price="3499.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_11.jpg" alt="Dress 11">
+                <h3>Modern Wrap Dress</h3>
+                <p>₹1,999.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="11" data-product-name="Modern Wrap Dress" data-product-price="1999.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_12.jpg" alt="Dress 12">
+                <h3>Retro Polka Dot Dress</h3>
+                <p>₹1,899.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="12" data-product-name="Retro Polka Dot Dress" data-product-price="1899.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_13.jpg" alt="Dress 13">
+                <h3>Elegant Midi Dress</h3>
+                <p>₹2,299.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="13" data-product-name="Elegant Midi Dress" data-product-price="2299.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_14.jpg" alt="Dress 14">
+                <h3>Stylish Jumpsuit</h3>
+                <p>₹2,499.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="14" data-product-name="Stylish Jumpsuit" data-product-price="2499.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_15.jpg" alt="Dress 15">
+                <h3>Chic Wrap Dress</h3>
+                <p>₹2,199.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="15" data-product-name="Chic Wrap Dress" data-product-price="2199.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_16.jpg" alt="Dress 16">
+                <h3>Saree</h3>
+                <p>₹1,399.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="16" data-product-name="Saree" data-product-price="1399.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_17.jpg" alt="Dress 17">
+                <h3>Suit-salwar</h3>
+                <p>₹1,399.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="17" data-product-name="Suit-salwar" data-product-price="1399.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_18.jpg" alt="Dress 18">
+                <h3>Lehanga</h3>
+                <p>₹1,399.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="18" data-product-name="Lehanga" data-product-price="1399.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_19.webp" alt="Dress 19">
+                <h3>Sharara</h3>
+                <p>₹2,199.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="19" data-product-name="Sharara" data-product-price="2199.00">Add to Cart</a>
+            </div>
+            <div class="product-item">
+                <img src="img_20.webp" alt="Dress 20">
+                <h3>Ankel-Frok</h3>
+                <p>₹4,591.00</p>
+                <a href="#" class="btn add-to-cart" data-product-id="20" data-product-name="Ankel-Frok" data-product-price="4591.00">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+
+    <aside id="cart-sidebar">
+        <span class="close-btn">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart">
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: ₹0</p>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+    </aside>
+    <footer class="product-footer">
+        <div class="product-footer-content">
+            <p>&copy; 2024 Dream. Designed for your unique style.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/YourPage" class="social-icon" aria-label="Facebook" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/YourProfile" class="social-icon" aria-label="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/YourProfile" class="social-icon" aria-label="Twitter" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>    
+    <div id="toast" class="toast"></div>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

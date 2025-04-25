@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AGaur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Dream Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <img src="search.png" class="search-icon" alt="Search Icon" aria-label="Search" id="search-icon">
+        </div>
+        <div class="user-actions">
+            <div class="user-action">
+                <img src="user-login-icon.svg" class="action-icon" alt="Login Icon" id="login-icon">
+                <span>User</span>
+            </div>
+            <div class="user-action">
+                <img src="wishlist.svg" class="action-icon" alt="Wishlist Icon">
+                <span>Wishlist</span>
+                <div class="badge">5</div> 
+            </div>
+            <div class="user-action">
+                <img src="cart.svg" class="action-icon" alt="Cart Icon">
+                <span>Cart</span>
+                <div class="badge">3</div> 
+            </div>
+        </div>
+        
+        <aside id="cart-sidebar">
+            <span class="close-btn">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart">
+                <ul id="cart-items"></ul> 
+                <p id="cart-total">Total: ₹0</p>
+            </div>
+            <button class="checkout-btn">Checkout</button> 
+        </aside>
+    </header>
+
+    
+    <section>
+        <div class="about-us-wrapper">
+        
+            <!-- Banner Image -->
+            <img class="banner-img" src="about-banner.avif" alt="About Us Banner">
+        
+            <!-- Our Story Section -->
+            <div class="container">
+                <div class="flex-container story-content">
+                    <img src="founder.jpg" alt="Anshu Gaur" class="founder-img">
+                    <div class="text-content">
+                        <h1>Meet our Dream's Founder</h1>
+                        <p>Dream's was founded by Anshu Gaur, a visionary with a deep passion for fashion and creativity. What began as a personal project has blossomed into a prominent brand known for its unique designs and commitment to quality. Anshu's love for fashion and desire to make a meaningful impact have guided the growth of Dream's, shaping it into a brand that celebrates individuality and style.</p>
+                        <p>From its humble beginnings, Dream's has expanded into a beacon of fashion innovation. Anshu's journey is a testament to dedication and artistic vision, creating fashion that not only enhances appearances but also inspires self-confidence and personal expression.</p>
+                        <p>At Dream's, every piece is crafted with care, telling a story and reflecting the essence of who you are. Anshu’s creative leadership ensures that Dream's remains a dynamic and evolving brand, dedicated to delivering excellence and inspiring its customers.</p>
+                    </div>
+                    <h3 class="mobile-only text-center">Anshu Gaur, Founder of Dream's</h3>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="flex-container fashion-experience">
+                    <img class="webb" src="experience.webp" alt="Fashion Experience">
+                    <div class="text-content">
+                        <h1>Our Fashion Experience</h1>
+                        <p>Since our inception, Dream's has been dedicated to offering high-quality, stylish, and affordable fashion. Our diverse collection caters to various tastes, from casual wear to elegant evening attire, ensuring that every customer finds something that makes them feel confident and beautiful.</p>
+                        <p>Our mission is to lead the fashion industry with innovation and sustainability while maintaining a commitment to customer satisfaction. We strive to set new standards in fashion by embracing eco-friendly practices and constantly evolving to meet the needs of our customers.</p>
+                        <p>We believe in making a positive impact not just in fashion but also on the environment, by fostering creativity and promoting sustainable practices.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="quote-section">
+                <div class="quote-content">
+                    <p>“We believe in inspiring our customers through quality and style rather than just discounts. Our mission is to offer an exceptional shopping experience that resonates with individuality and fashion.”</p>
+                    <h3>– Anshu Gaur, Founder of Dream's</h3>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="flex-container find-your-moment">
+                    <div class="text-content">
+                        <h1>Find Your Moment</h1>
+                        <p>Explore our collection to find those perfect pieces that make every moment special. Whether it’s a pair of jeans that fits just right or a dress that makes you shine, we are here to help you find styles that match your unique personality.</p>
+                        <div class="button-container text-center">
+                            <a href="contact.html" class="button">Get in Touch</a>
+                        </div>
+                    </div>
+                    <img class="webb" src="moments.avif" alt="Find Your Moment">
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="flex-container fashion-experience">
+                    <img class="webb" src="faces.webp" alt="The Faces Behind">
+                    <div class="text-content">
+                        <h1>The Faces Behind Dream's</h1>
+                        <p>Meet the passionate and dedicated team members behind Dream's. Their commitment, creativity, and hard work are the driving forces behind our success. Each member brings their unique skills and enthusiasm, contributing to our mission of delivering exceptional fashion and service.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="flex-container fashion-experience">
+                    <div class="text-content">
+                        <h1>SHOW US Some Love!</h1>
+                        <p>We’ll know we’re successful not through skyrocketing numbers but if we manage to build a community of customers who cares for us as deeply as w ecare for them. Keep coming back to us and tell us what you love, there’s nothing that makes us happier!</p>
+                        <p>At Dream's, our sustainable collections are crafted with care, ensuring that every piece is both stylish and environmentally friendly. Our goal is to lead by example and inspire others to make sustainable choices that benefit the planet and society.</p>
+                    </div>
+                    <img class="love" src="love.webp" alt="Sustainability">
+                </div>
+            </div>
+        
+            <div class="quote-section">
+                <div class="quote-content">
+                    <p>“The journey towards sustainability is ongoing, and we are proud to be part of a movement that prioritizes the health of our planet and future generations.”</p>
+                    <h3>– Anshu Gaur, Founder of Dream's</h3>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="text-content">
+                    <h1>Our Categories</h1>
+                    <p>We offer a diverse range of products to suit various needs and styles:</p>
+                    <ul>
+                        <li>Casual Wear</li>
+                        <li>Formal Attire</li>
+                        <li>Evening Wear</li>
+                        <li>Accessories</li>
+                        <li>Eco-Friendly Collections</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dream - Taste the Legacy. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/YourPage" class="social-icon" aria-label="Facebook" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/YourProfile" class="social-icon" aria-label="Instagram" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/YourProfile" class="social-icon" aria-label="Twitter" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+    <div id="toast" class="toast"></div>
+
+    <script src="cart.js"></script>
+    
+</body>
+</html>
