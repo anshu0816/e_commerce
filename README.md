@@ -1,8 +1,8 @@
 # Dream - Taste the Legacy
 
-![AGaur Logo](logo.png)
+![Dream Logo](logo.png)
 
-AGaur is a stylish fashion e-commerce website designed to offer high-quality clothing for all occasions. The website allows users to browse a wide selection of products, add them to their cart, and proceed with a seamless checkout experience. Additionally, it provides users with personalized experiences, including the ability to log in, create an account, search for products, and contact customer support.
+Dream is a stylish fashion e-commerce website designed to offer high-quality clothing for all occasions. The website allows users to browse a wide selection of products, add them to their cart, and proceed with a seamless checkout experience. Additionally, it provides users with personalized experiences, including the ability to log in, create an account, search for products, and contact customer support.
 
 ## Features
 
@@ -18,28 +18,28 @@ AGaur is a stylish fashion e-commerce website designed to offer high-quality clo
 
 ## Website Screenshots
 
-# 🌐 AGaur – Web View
+# Dream – Web View
 
 Welcome to the AGaur Web Project! Below are the previews of various pages of this site.
 
 ---
 
-## 🏠 Home Page
+## Home Page
 ![Home Page](web_view/home_page.png)
 
-## 🔐 Login Page
+## Login Page
 ![Login Page](web_view/login_page.png)
 
-## 🛒 Cart Page
+## Cart Page
 ![Cart Page](web_view/cart.png)
 
-## 📦 Item Page
+## Item Page
 ![Item Page](web_view/item_page.png)
 
-## 📞 Contact Page
+## Contact Page
 ![Contact Page](web_view/contact.png)
 
-## 📄 About Pages
+## About Pages
 ![About Page 1](web_view/about.png)
 ![About Page 2](web_view/about2.png)
 ![About Page 3](web_view/abput3.png)
